@@ -459,29 +459,76 @@
 
     /* ================= FOOTER ================= */
 
-    .footer {
-      background: black;
-      color: white;
-      padding: 60px 0;
+    /* =============================
+       PREMIUM BLACK FOOTER
+    ============================= */
+    .custom-footer {
+      background: #000;
+      color: #fff;
+      padding: 40px 60px 20px 60px;
     }
 
-    .footer-cols {
+    .footer-container {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 20px;
     }
 
-    .footer strong {
-      font-family: 'Libre Baskerville', serif;
+    .footer-left {
+      max-width: 300px;
+      margin-left: 60px;
+      position: relative;
+    }
+
+    .footer-left h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .footer-left p {
+      font-size: 14px;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    .footer-middle {
+      text-align: left;
+    }
+
+    .footer-middle p {
+      margin-bottom: 12px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .footer-right h3 {
       font-size: 18px;
+      margin-bottom: 15px;
     }
 
-    .copyright {
-      text-align: center;
-      margin-top: 40px;
+    .footer-right ul {
+      list-style: none;
+    }
+
+    .footer-right ul li {
+      margin-bottom: 10px;
+      font-size: 14px;
+      opacity: 0.85;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .footer-right ul li:hover {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      margin-top: 60px;
       padding-top: 20px;
       border-top: 1px solid rgba(255, 255, 255, 0.3);
+      text-align: center;
       font-size: 13px;
       opacity: 0.7;
     }
@@ -642,6 +689,33 @@
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
       .nav-arrow-right { right: 15px; }
+
+      .custom-footer {
+        padding: 60px 20px 30px 20px;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+      }
+
+      .footer-left {
+        margin-left: 0;
+        max-width: none;
+      }
+
+      .footer-left img {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
+      }
+
+      .footer-bottom {
+        font-size: 12px;
+      }
     }
 
     /* ================= MOBILE ================= */
@@ -1111,28 +1185,31 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container footer-cols">
-      <div class="footer-left-col">
-        <strong>Shake & Gulp</strong>
+  <!-- FOOTER -->
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>Shake & Gulp</h2>
         <p>Traditional Drinks. Honest Ingredients.</p>
-        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
+        <img src="../fssai.png" alt="FSSAI Logo"
+          style="width: 180px; position: absolute; top: 80px; left: 0; display: block;">
       </div>
-      <div>
+      <div class="footer-middle">
         <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
         <p>📞 Phone Number : 9700159200</p>
-        <p>✉️ Email</p>
+        <p>📧 Email</p>
       </div>
-      <div>
-        <p style="cursor: pointer;">Quick Links</p>
-        <p onclick="location.href='../index.html#home'" style="cursor: pointer;">Home</p>
-        <p onclick="location.href='../index.html#traditional'" style="cursor: pointer;">Traditional Drinks</p>
-        <p onclick="location.href='../index.html#wellness'" style="cursor: pointer;">Wellness Drinks</p>
-        <p onclick="location.href='../index.html#read'" style="cursor: pointer;">Read</p>
-        <p onclick="openContact()" style="cursor: pointer;">Contact</p>
+      <div class="footer-right">
+        <h3>Quick Links</h3>
+        <ul>
+          <li onclick="location.href='../index.html#home'">• Home</li>
+          <li onclick="location.href='../index.html#traditional'">• Flavours</li>
+          <li onclick="location.href='../index.html#wellness'">• Wellness</li>
+          <li onclick="location.href='../index.html#read'">• Read</li>
+        </ul>
       </div>
     </div>
-    <p class="copyright">© Shake & Gulp — Shake Well. Gulp Fresh.</p>
+    <div class="footer-bottom"> © Shake & Gulp — Shake Well. Gulp Fresh. </div>
   </footer>
 
   <script>
