@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -629,6 +631,19 @@
       right: 40px;
     }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
+
     @media (max-width: 768px) {
       .nav-arrow {
         width: 45px;
@@ -756,6 +771,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -885,7 +907,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1044,12 +1066,11 @@
       </div>
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Let’s be honest: Amla isn’t for the faint of heart. It’s sharp, it’s sour, and it hits you with a wake-up
-          call that only nature can provide. In our homes, Amla was never just a fruit; it was a quiet strength we
-          trusted when we felt run down.</p>
-        <p>We’ve kept that spirit alive, adding just enough ginger and honey to make it a ritual you actually look
-          forward to—without losing that raw, honest kick. Natural settling happens because it's real, so give it a good
-          shake and embrace the tang.</p>
+        <p>Amla has a sharp and sour flavor that provides a natural wake-up call for your system. In many homes, Amla
+          was always a source of strength that people trusted when they felt run down.</p>
+        <p>We have maintained that authentic spirit by adding a small amount of ginger and honey to help balance the
+          flavor while keeping the original, honest kick. Because we use real ingredients, natural settling is normal,
+          so please give the bottle a good shake before you enjoy it.</p>
       </div>
     </div>
   </section>
@@ -1058,13 +1079,13 @@
     <div class="info-block">
       <h3>Health Benefits</h3>
       <ul class="tick-list two-column">
-        <li>A massive, natural Vitamin C boost (the kind your body actually recognizes)</li>
-        <li>Gives your immunity that extra layer of defense for the season ahead</li>
-        <li>Helps clear that 'dull' look, giving your skin and hair their light back</li>
-        <li>A clean energy lift that doesn't come with a caffeine crash</li>
-        <li>The simplest 5-second habit for a long-term healthy lifestyle</li>
+        <li>Provides a natural boost of Vitamin C that is easily recognized by the body</li>
+        <li>Supports your natural immunity and overall defense systems</li>
+        <li>Helps promote a healthy appearance for your skin and hair</li>
+        <li>Offers a clean lift to your day without the need for caffeine</li>
+        <li>A simple way to add a healthy habit to your daily routine</li>
       </ul>
-      <p class="note">It’s a tiny bottle, but its impact on your day is anything but small.</p>
+      <p class="note">A small bottle that can make a noticeable difference in your day.</p>
     </div>
 
     <div class="info-block">
@@ -1082,21 +1103,20 @@
 
     <div class="info-block">
       <h3>The Roots of the Ritual</h3>
-      <p>There’s a reason our grandmothers swore by Amla. It doesn’t pretend to be a sweet treat—it’s a shot of
-        resilience. Every gulp is a reminder that looking after yourself doesn't have to be complicated.</p>
-      <p><em>Shake & Gulp Amla Shot is our way of bringing a piece of old-world wisdom into your fast-paced morning.
-          Simple, real, and honest.</em></p>
+      <p>There is a reason Amla has been trusted for generations. It is a straightforward and natural way to look after
+        yourself. Shake & Gulp Amla Shot is our way of making traditional wisdom accessible for a busy schedule. It is
+        simple, real, and honest.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Give it a real shake—the good stuff settles at the bottom</li>
-        <li>Best enjoyed first thing in the morning</li>
-        <li>Take it as a single, brave shot (trust us, you’ll feel the buzz)</li>
-        <li>Keep water nearby if the sharp tang is more than you expected</li>
+        <li>Shake the bottle well as the natural ingredients settle at the bottom</li>
+        <li>Best enjoyed first thing in the morning as part of your routine</li>
+        <li>Consume it as a single shot to fully experience the flavor</li>
+        <li>You can keep some water nearby if you find the tang too sharp</li>
       </ul>
-      <p><strong>Shake the tradition. Gulp the glow.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1120,13 +1140,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

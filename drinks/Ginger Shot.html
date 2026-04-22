@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -624,6 +626,18 @@
     .nav-arrow-left { left: 40px; }
     .nav-arrow-right { right: 40px; }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
@@ -741,6 +755,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -870,7 +891,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1024,8 +1045,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>The Ginger Shot is a powerful wake-up call built around one of nature’s most respected roots. Ginger has been trusted for generations for its warming and revitalizing strength. We’ve combined it with lemon for a fresh zest, honey for a smooth balance, and a hint of pepper to activate its full potential. It’s sharp, decisive, and exactly what you need to cut through the morning fog.</p>
-        <p>Shake & Gulp Ginger Shot is designed for modern lifestyles that need quick, natural support. Since real ingredients love to settle, every bottle is meant to be shaken well before drinking.</p>
+        <p>The Ginger Shot is prepared using one of nature’s most respected roots. Ginger has been trusted for generations for its warming and revitalizing strength. We’ve combined it with lemon for a fresh zest, honey for a smooth balance, and a hint of pepper. It is sharp and provides a natural way to start your day.</p>
+        <p>Shake & Gulp Ginger Shot is designed for modern lifestyles that need quick, natural support. Since we use real ingredients, they may naturally settle, so please shake the bottle well before drinking.</p>
       </div>
     </div>
   </section>
@@ -1058,18 +1079,18 @@
 
     <div class="info-block">
       <h3>Roots of the Ritual</h3>
-      <p>There’s something reassuring about the warmth of ginger—a familiar remedy passed down through generations. It’s the drink our elders reached for when the weather changed or when a little extra fire was needed. Shake & Gulp Ginger Shot brings that trusted tradition into your daily routine—simple, strong, and made with absolute care.</p>
+      <p>There is something reassuring about the warmth of ginger, a familiar remedy passed down through generations. It is the drink many people have reached for when the weather changed or when they needed extra support for their system. Shake & Gulp Ginger Shot brings that trusted tradition into your daily routine in a simple and honest way.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Shake well before opening—real ginger juice loves to settle</li>
-        <li>Best served chilled, though the ginger will keep you warm</li>
-        <li>Consume in one quick gulp to feel the full revitalization</li>
-        <li>Follow with a sip of water if you find the kick too strong</li>
+        <li>Shake the bottle well before opening because real ginger juice tends to settle</li>
+        <li>Best served chilled for the most refreshing taste</li>
+        <li>Consume it quickly to fully appreciate the flavor</li>
+        <li>You can follow it with a sip of water if you find the kick too strong</li>
       </ul>
-      <p><strong>Shake the heat. Gulp the strength.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1093,13 +1114,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

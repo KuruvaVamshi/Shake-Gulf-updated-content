@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -624,6 +626,18 @@
     .nav-arrow-left { left: 40px; }
     .nav-arrow-right { right: 40px; }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
@@ -741,6 +755,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -870,7 +891,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1036,8 +1057,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Masala Buttermilk is the 'energy drink' our grandmothers made. It’s a bold, flavorful blend of cooling curd, ginger for warmth, and the sharp kick of fresh green chilies and curry leaves. It doesn't just hydrate; it wakes up your palate and your system. We’ve kept the spice real and the texture honest, just like the glass that was always waiting for you at home.</p>
-        <p>Shake & Gulp keeps it pure—real ingredients, no artificial additives, just a timeless recipe bottled for modern life.</p>
+        <p>Masala Buttermilk is often thought of as the original energy drink prepared in traditional kitchens. It is a bold and flavorful blend of cooling curd, ginger for warmth, and the sharp taste of fresh green chilies and curry leaves. It does more than just hydrate; it provides a refreshing kick that wakes up your system. We have kept the spice profile authentic and the texture honest, staying true to the recipe that was always waiting for you at home.</p>
+        <p>At Shake & Gulp, we prioritize pure and real ingredients without using artificial additives, ensuring a timeless recipe is available for your modern routine.</p>
       </div>
     </div>
   </section>
@@ -1046,13 +1067,13 @@
     <div class="info-block">
       <h3>Health Benefits</h3>
       <ul class="tick-list two-column">
-        <li>Acts as a natural 'digestive fire' to help process heavy meals</li>
-        <li>Actively fights body heat and dehydration with every spicy sip</li>
-        <li>Probiotic-rich house-made curd supports long-term gut health</li>
-        <li>The kick of ginger and chilies helps revitalize a sluggish metabolism</li>
-        <li>Perfect for balancing the system after a rich or oil-heavy feast</li>
+        <li>Supports digestion naturally after a heavy or rich meal</li>
+        <li>Helps the body cool down and stay hydrated with a savory flavor profile</li>
+        <li>Contains house-made curd which is rich in probiotics for gut wellness</li>
+        <li>Includes ginger and chilies that provide a natural way to feel revitalized</li>
+        <li>Useful for balancing your system after consuming spicy or oily foods</li>
       </ul>
-      <p class="note">A spicy, cooling legacy in every bottle.</p>
+      <p class="note">A savory and cooling tradition in every bottle.</p>
     </div>
 
     <div class="info-block">
@@ -1069,18 +1090,18 @@
 
     <div class="info-block">
       <h3>Roots of the Ritual</h3>
-      <p>This is the flavor of a bustling Indian kitchen. It’s the sound of the churn and the smell of fresh ginger. It’s a ritual of revival—a drink made for sharing and for feeling alive again. Shake & Gulp Masala Buttermilk brings that spicy, cooling legacy to you in every bottle.</p>
+      <p>This drink captures the atmosphere of a busy Indian kitchen, with the familiar sound of the churn and the aroma of fresh ginger. It is a tradition based on feeling refreshed and revitalized. Shake & Gulp Masala Buttermilk maintains this legacy by using the same spicy and cooling elements that have been enjoyed for generations.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Shake well to get those spices and herbs moving together</li>
-        <li>Best served chilled—the contrast of spice and cold is the magic</li>
-        <li>Best enjoyed post-meal or during your mid-afternoon reset</li>
-        <li>Sip slowly and let the warmth linger after the cold curd</li>
+        <li>Shake the bottle well so the spices and herbs are mixed evenly</li>
+        <li>Best served chilled to enjoy the contrast between the spice and the cold curd</li>
+        <li>Enjoy it after a meal or whenever you need a mid-afternoon refresh</li>
+        <li>Sip it slowly to appreciate the blend of herbs and cooling buttermilk</li>
       </ul>
-      <p><strong>Shake the spice. Gulp the revival.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1104,13 +1125,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

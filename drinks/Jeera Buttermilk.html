@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -621,12 +623,19 @@
       color: #000;
     }
 
-    .nav-arrow-left {
-      left: 40px;
+    .nav-arrow-left { left: 40px; }
+    .nav-arrow-right { right: 40px; }
+
+    .footer-left-col {
+      position: relative;
     }
 
-    .nav-arrow-right {
-      right: 40px;
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
     }
 
     @media (max-width: 768px) {
@@ -757,6 +766,13 @@
         flex-direction: column;
         text-align: center;
       }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
+      }
     }
 
     @media (min-width: 769px) and (max-width: 1024px) {
@@ -885,7 +901,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1039,8 +1055,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Jeera Buttermilk is a staple for a reason. We’ve stayed true to the classic ritual: cooling, house-made curd blended with hand-roasted cumin seeds. It’s that familiar, earthy taste that settles your stomach and clears your mind after a heavy meal. No fluff, no artificial powders—just honest tradition in a bottle.</p>
-        <p>Shake & Gulp keeps it simple—real ingredients, no additives, shaken fresh every time.</p>
+        <p>Jeera Buttermilk is a staple for a reason. We’ve stayed true to the classic ritual of blending house-made curd with hand-roasted cumin seeds. It is that familiar and earthy taste that helps settle your stomach and provides a sense of clarity after a large meal. We focus on using authentic ingredients and avoid artificial powders or additives to keep the tradition honest.</p>
+        <p>At Shake & Gulp, we keep things simple by using real ingredients and preparing every bottle fresh.</p>
       </div>
     </div>
   </section>
@@ -1072,18 +1088,18 @@
 
     <div class="info-block">
       <h3>Roots of the Ritual</h3>
-      <p>This is the drink that has finished every great Indian meal for centuries. It’s a ritual of relief—a simple way to say 'all is well.' Shake & Gulp Jeera Buttermilk brings that same cooling, comforting tradition to your modern table.</p>
+      <p>This is a drink that has been part of Indian meals for generations. It is a simple way to stay cool and help your system find its balance. Shake & Gulp Jeera Buttermilk brings that same cooling and comforting tradition to you in every bottle.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Shake well—the roasted cumin bits love to settle</li>
-        <li>Best served chilled, especially after your main meal</li>
-        <li>Sip slowly to let the cooling effect truly take over</li>
-        <li>Perfect for warm afternoons or post-meal comfort</li>
+        <li>Shake the bottle well as the roasted cumin tends to settle at the bottom</li>
+        <li>Best served chilled, particularly after a heavy or spicy meal</li>
+        <li>Sip it slowly to fully enjoy the cooling effect on your system</li>
+        <li>It is a great choice for warm afternoons or as a post-meal digestive</li>
       </ul>
-      <p><strong>Shake the spice. Gulp the calm.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1107,13 +1123,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

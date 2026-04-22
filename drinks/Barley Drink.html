@@ -480,7 +480,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -625,6 +627,18 @@
     .nav-arrow-left { left: 40px; }
     .nav-arrow-right { right: 40px; }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
@@ -742,6 +756,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -932,7 +953,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1103,8 +1124,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Barley isn’t just a grain; it’s a household secret for keeping cool. Long before fancy sports drinks, there was Barley water—poured for anyone coming in from the heat. We’ve stayed true to that tradition, adding a squeeze of fresh lemon and a touch of honey to create a drink that feels like a deep breath for your body.</p>
-        <p>Shake & Gulp Barley Drink blends this time-honored grain with brightness and smoothness. The result is a drink that feels light, clean, and naturally refreshing. Since real ingredients naturally settle, every bottle is meant to be shaken well before drinking.</p>
+        <p>Barley has long been used as a traditional way to stay cool. It is a simple household choice for managing heat, often prepared for anyone coming in from the sun. We have stayed true to that tradition, adding fresh lemon and a touch of honey to create a drink that provides a moment of relief for your body.</p>
+        <p>Shake & Gulp Barley Drink combines this time-honored grain with a clean and refreshing taste. It is designed to be light and naturally hydrating. Since we use real ingredients, they may naturally settle, so please shake the bottle well before enjoying.</p>
       </div>
 
     </div>
@@ -1140,19 +1161,18 @@
 
     <div class="info-block">
       <h3>Roots of the Ritual</h3>
-      <p>Barley water has always been about patience and relief. It’s the drink made by mothers and grandmothers for anyone feeling the heat—a simple, honest way to say 'take care.'</p>
-      <p><em>Shake & Gulp Barley Drink brings that same quiet care into your modern routine—light, soothing, and made with intention.</em></p>
+      <p>Barley water is a traditional remedy that has been used for generations to provide cooling and relief. It is a simple and honest way to care for the body during warm weather. Shake & Gulp Barley Drink brings that same quiet care into your daily routine in a light and intentional way.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Give it a real shake—the barley extract settles by design</li>
-        <li>Best served chilled when you’re feeling the heat</li>
-        <li>Sip it slowly to let the cooling effect truly set in</li>
-        <li>Perfect for refreshing yourself after a long walk or sun exposure</li>
+        <li>Shake the bottle well before opening because the barley extract naturally settles</li>
+        <li>Best served chilled when you need a cooling drink</li>
+        <li>Sip it slowly to fully enjoy the refreshing effect</li>
+        <li>It is an excellent choice after being out in the sun or for general hydration</li>
       </ul>
-      <p><strong>Shake the tradition. Gulp the cool.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
 
   </section>
@@ -1180,14 +1200,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
-
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
 

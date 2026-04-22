@@ -686,6 +686,7 @@
         .footer-left {
             max-width: 300px;
             margin-left: 60px;
+            position: relative;
         }
 
         .footer-left h2 {
@@ -731,9 +732,9 @@
         }
 
         .footer-bottom {
-            margin-top: 25px;
-            padding-top: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
             text-align: center;
             font-size: 13px;
             opacity: 0.7;
@@ -921,6 +922,236 @@
             display: flex;
         }
 
+
+        /* =============================
+           LAPTOP & TABLET SCALING (10% - 25% SMALLER)
+        ============================= */
+        @media (max-width: 1600px) {
+            .hero-text {
+                font-size: 54px;
+            }
+
+            .bottle {
+                width: 300px;
+                height: 470px;
+            }
+
+            .left-bottle {
+                left: 33%;
+            }
+
+            .right-bottle {
+                right: 13%;
+            }
+
+            .lemon {
+                width: 110px;
+                left: 190px;
+                bottom: 330px;
+            }
+
+            .mint {
+                width: 90px;
+                top: 190px;
+                right: -120px;
+            }
+
+            .jeera {
+                width: 110px;
+                bottom: 95px;
+                left: -25px;
+            }
+
+            .arrow {
+                width: 55px;
+                height: 55px;
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 1440px) {
+            .hero-text {
+                font-size: 48px;
+            }
+
+            .bottle {
+                width: 270px;
+                height: 420px;
+            }
+
+            .left-bottle {
+                left: 34%;
+            }
+
+            .right-bottle {
+                right: 14%;
+            }
+
+            .lemon {
+                width: 100px;
+                left: 165px;
+                bottom: 290px;
+            }
+
+            .mint {
+                width: 80px;
+                top: 170px;
+                right: -105px;
+            }
+
+            .jeera {
+                width: 100px;
+                bottom: 80px;
+                left: -18px;
+            }
+
+            .arrow {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+
+            .bottle-name {
+                font-size: 18px;
+                bottom: 50px;
+            }
+
+            .bottle-content {
+                font-size: 14px;
+                bottom: 50px;
+                left: 40px;
+            }
+        }
+
+        @media (max-width: 1280px) {
+            .hero-text {
+                font-size: 42px;
+            }
+
+            .bottle {
+                width: 240px;
+                height: 380px;
+            }
+
+            .left-bottle {
+                left: 35%;
+            }
+
+            .right-bottle {
+                right: 16%;
+            }
+
+            .lemon {
+                width: 85px;
+                left: 150px;
+                bottom: 260px;
+            }
+
+            .mint {
+                width: 70px;
+                top: 150px;
+                right: -95px;
+            }
+
+            .jeera {
+                width: 85px;
+                bottom: 70px;
+                left: -12px;
+            }
+
+            .arrow-left {
+                left: 40px;
+            }
+
+            .arrow-right {
+                right: 40px;
+            }
+
+            .home-explore-btn {
+                bottom: 40px;
+                right: 40px;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .hero-text {
+                font-size: 38px;
+            }
+
+            .bottle {
+                width: 220px;
+                height: 340px;
+            }
+
+            .left-bottle {
+                left: 36%;
+            }
+
+            .right-bottle {
+                right: 18%;
+            }
+
+            .lemon {
+                width: 75px;
+                left: 140px;
+                bottom: 240px;
+            }
+
+            .mint {
+                width: 60px;
+                top: 140px;
+                right: -85px;
+            }
+
+            .jeera {
+                width: 75px;
+                bottom: 60px;
+                left: -10px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-text {
+                font-size: 34px;
+            }
+
+            .bottle {
+                width: 200px;
+                height: 310px;
+            }
+
+            .left-bottle {
+                left: 37%;
+            }
+
+            .right-bottle {
+                right: 20%;
+            }
+
+            .lemon {
+                width: 70px;
+                left: 130px;
+                bottom: 220px;
+            }
+
+            .mint {
+                width: 55px;
+                top: 130px;
+                right: -80px;
+            }
+
+            .jeera {
+                width: 70px;
+                bottom: 55px;
+                left: -8px;
+            }
+
+            .arrow {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+            }
+        }
 
         /* =============================
            MOBILE OPTIMIZATION
@@ -1133,6 +1364,13 @@
             .custom-footer {
                 padding: 60px 20px 30px 20px;
             }
+
+            .footer-left img {
+                position: static !important;
+                margin: 30px auto 0 auto !important;
+                width: 220px !important;
+                opacity: 1 !important;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1184,7 +1422,7 @@
         <div class="nav-blur"></div>
 
         <div class="navbar">
-            <div class="logo">
+            <div class="logo" onclick="location.href='index.html'" style="cursor: pointer;">
                 <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
             </div>
 
@@ -1390,6 +1628,7 @@
             <div class="footer-left">
                 <h2>Shake & Gulp</h2>
                 <p>Traditional Drinks. Honest Ingredients.</p>
+                <img src="fssai.png" alt="FSSAI Logo" style="width: 180px; position: absolute; top: 80px; left: 0; display: block;">
             </div>
             <div class="footer-middle">
                 <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>

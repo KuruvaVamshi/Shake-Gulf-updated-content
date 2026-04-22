@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -624,6 +626,18 @@
     .nav-arrow-left { left: 40px; }
     .nav-arrow-right { right: 40px; }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
@@ -741,6 +755,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -870,7 +891,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1018,8 +1039,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Date Buttermilk is our answer to the midday slump. We took the creaminess of traditional buttermilk and blended it with the deep, earthy sweetness of real dates. It’s not just a drink; it’s a mini-meal in a bottle, designed to give you that much-needed energy without the artificial sugar crash.</p>
-        <p>Unlike sugary beverages, the sweetness here comes from nature itself. Shake & Gulp Date Buttermilk delivers a smooth, satisfying taste while staying gentle on the stomach. Since real ingredients naturally settle, every bottle is meant to be shaken well before drinking.</p>
+        <p>Date Buttermilk provides a natural way to recharge during the day. We have combined traditional buttermilk with the natural sweetness of real dates. It is designed to offer energy using authentic ingredients rather than refined sugars.</p>
+        <p>The sweetness in this drink is entirely natural. Shake & Gulp Date Buttermilk offers a smooth taste while remaining light on the stomach. Since we use real ingredients, they may naturally settle, so please shake the bottle well before drinking.</p>
       </div>
     </div>
   </section>
@@ -1051,19 +1072,18 @@
 
     <div class="info-block">
       <h3>Roots of the Ritual</h3>
-      <p>Dates have always symbolized natural nourishment and care—a source of life and strength. Combined with buttermilk, this drink carries the warmth of traditional wisdom in a refreshing form. It’s our way of giving you a gentle, honest recharge when you need it most.</p>
-      <p><em>Shake & Gulp Date Buttermilk feels like a gentle recharge—simple, honest, and made with intention.</em></p>
+      <p>Dates have long been a symbol of natural nourishment and strength in many cultures. Combined with buttermilk, this drink offers traditional wisdom in a refreshing form. It is our way of providing a simple and honest recharge whenever it is needed.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Give it a thorough shake to mix the date richness with the creaminess</li>
-        <li>Best served chilled for the most refreshing experience</li>
-        <li>Enjoy mid-morning or during your afternoon energy dip</li>
-        <li>Take small sips and savor the natural, earthy sweetness</li>
+        <li>Shake the bottle well to properly mix the dates with the buttermilk</li>
+        <li>Best served chilled for a refreshing taste</li>
+        <li>It is a good choice for mid-morning or during an afternoon break</li>
+        <li>Sip it slowly to fully enjoy the natural flavor of the dates</li>
       </ul>
-      <p><strong>Shake the richness. Gulp the goodness.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1087,13 +1107,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

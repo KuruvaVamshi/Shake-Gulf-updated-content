@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -624,6 +626,18 @@
     .nav-arrow-left { left: 40px; }
     .nav-arrow-right { right: 40px; }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
@@ -741,6 +755,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -870,7 +891,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1030,8 +1051,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Nimbu Sabja is the 'air-conditioner' of the natural world. We’ve combined the zing of fresh lemons with the deep cooling power of Sabja (sweet basil) seeds. These little pearls of hydration have been used for generations to bring down body heat instantly. It’s light, simple, and exactly what your system craves when the sun or the schedule gets too intense.</p>
-        <p>When soaked, sabja seeds swell and develop a soft texture that makes the drink both interesting and satisfying. Shake & Gulp Nimbu Sabja brings this classic combination into a clean, ready-to-drink format. Since real seeds naturally settle, every bottle is meant to be shaken well before drinking.</p>
+        <p>Nimbu Sabja is a natural way to help your body manage heat. We have combined the flavor of fresh lemons with the cooling properties of Sabja (sweet basil) seeds. These seeds have been used for generations to provide immediate refreshment and hydration. It is a simple and effective choice for when you need a cooling drink.</p>
+        <p>When soaked, Sabja seeds develop a unique texture that makes the drink satisfying. Shake & Gulp Nimbu Sabja provides this classic combination in a ready-to-drink format. Since we use real ingredients, the seeds may naturally settle, so please shake the bottle well before drinking.</p>
       </div>
     </div>
   </section>
@@ -1064,18 +1085,18 @@
 
     <div class="info-block">
       <h3>Roots of the Ritual</h3>
-      <p>This is the ritual of the steel tumbler—the drink handed to you the moment you walked in from the heat. It’s an ancient way of saying 'slow down and refresh.' Shake & Gulp Nimbu Sabja brings that timeless cooling ritual to you, bottled and ready for the modern pace.</p>
+      <p>This is a familiar ritual in many homes—the refreshing drink provided to someone coming in from the heat. It is a traditional way to encourage a moment of rest and hydration. Shake & Gulp Nimbu Sabja brings that timeless cooling ritual to your daily routine in a simple and intentional way.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Shake well—the Sabja seeds love to huddle at the bottom</li>
-        <li>Best enjoyed ice-cold, straight from the bottle</li>
-        <li>The perfect companion for a midday break or a sun-drenched commute</li>
-        <li>Sip and enjoy the unique texture of the hydrated seeds</li>
+        <li>Shake the bottle well before opening so the Sabja seeds are properly mixed</li>
+        <li>Best served ice-cold for the most refreshing taste</li>
+        <li>It is an excellent choice for a midday break or when traveling in the heat</li>
+        <li>Take your time to appreciate the unique texture of the hydrated seeds</li>
       </ul>
-      <p><strong>Shake the zing. Gulp the cool.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1099,13 +1120,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

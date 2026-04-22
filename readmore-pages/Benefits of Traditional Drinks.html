@@ -403,29 +403,76 @@
             color: #444;
         }
 
-        /* FOOTER */
-        .footer {
-            background: black;
-            color: white;
-            padding: 60px 0;
-            margin-top: 80px;
+        /* =============================
+           PREMIUM BLACK FOOTER
+        ============================= */
+        .custom-footer {
+            background: #000;
+            color: #fff;
+            padding: 40px 60px 20px 60px;
         }
 
-        .footer-cols {
+        .footer-container {
             display: flex;
             justify-content: space-between;
+            align-items: flex-start;
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 20px;
         }
 
-        .footer strong {
-            font-family: 'Libre Baskerville', serif;
+        .footer-left {
+            max-width: 300px;
+            margin-left: 60px;
+            position: relative;
+        }
+
+        .footer-left h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .footer-left p {
+            font-size: 14px;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .footer-middle {
+            text-align: left;
+        }
+
+        .footer-middle p {
+            margin-bottom: 12px;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .footer-right h3 {
             font-size: 18px;
+            margin-bottom: 15px;
         }
 
-        .copyright {
+        .footer-right ul {
+            list-style: none;
+        }
+
+        .footer-right ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            opacity: 0.85;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .footer-right ul li:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
             text-align: center;
-            margin-top: 30px;
             font-size: 13px;
             opacity: 0.7;
         }
@@ -489,17 +536,30 @@
             }
 
             /* FOOTER */
-            .footer {
-                padding: 40px 0;
+            .custom-footer {
+                padding: 60px 20px 30px 20px;
             }
 
-            .footer-cols {
+            .footer-container {
                 flex-direction: column;
-                gap: 20px;
+                align-items: center;
                 text-align: center;
+                gap: 40px;
             }
 
-            .copyright {
+            .footer-left {
+                margin-left: 0;
+                max-width: none;
+            }
+
+            .footer-left img {
+                position: static !important;
+                margin: 30px auto 0 auto !important;
+                width: 220px !important;
+                opacity: 1 !important;
+            }
+
+            .footer-bottom {
                 font-size: 12px;
             }
         }
@@ -511,7 +571,7 @@
     <div class="nav-blur"></div>
 
     <div class="navbar">
-        <div class="logo">
+        <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
             <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo"> SHAKE & GULP
         </div>
 
@@ -668,36 +728,30 @@
     </section>
 
     <!-- FOOTER -->
-
-    <footer class="footer">
-
-        <div class="container footer-cols">
-
-            <div>
-                <strong>Shake & Gulp</strong>
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Shake & Gulp</h2>
                 <p>Traditional Drinks. Honest Ingredients.</p>
+                <img src="../fssai.png" alt="FSSAI Logo"
+                    style="width: 180px; position: absolute; top: 80px; left: 0; display: block;">
             </div>
-
-            <div>
-                <p>📍 Address</p>
-                <p>📞 Phone</p>
-                <p>✉️ Email</p>
+            <div class="footer-middle">
+                <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+                <p>📞 Phone Number : 9700159200</p>
+                <p>📧 Email</p>
             </div>
-
-            <div>
-                <p>Quick Links</p>
-                <p>Home</p>
-                <p>Traditional Drinks</p>
-                <p>Wellness Drinks</p>
-                <p>Read</p>
+            <div class="footer-right">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li onclick="location.href='../index.html#home'">• Home</li>
+                    <li onclick="location.href='../index.html#traditional'">• Flavours</li>
+                    <li onclick="location.href='../index.html#wellness'">• Wellness</li>
+                    <li onclick="location.href='../index.html#read'">• Read</li>
+                </ul>
             </div>
-
         </div>
-
-        <p class="copyright">
-            © Shake & Gulp — Shake Well. Gulp Fresh.
-        </p>
-
+        <div class="footer-bottom"> © Shake & Gulp — Shake Well. Gulp Fresh. </div>
     </footer>
 
     <div id="contactOverlay" class="overlay">

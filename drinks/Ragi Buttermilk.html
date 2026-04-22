@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -624,6 +626,18 @@
     .nav-arrow-left { left: 40px; }
     .nav-arrow-right { right: 40px; }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
@@ -741,6 +755,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -870,7 +891,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1022,8 +1043,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Ragi isn’t just a grain; it’s a legend. For generations, it has been the backbone of strength in Indian homes, known for keeping people full and fueled through long days of hard work. We’ve paired this humble super-grain with cooling buttermilk to create a drink that nourishes without the heavy 'food coma' feeling.</p>
-        <p>Ragi survives where other grains can't—it’s a symbol of resilience. Every bottle of our Ragi Buttermilk is a tribute to that strength. It’s designed for modern lifestyles that need natural energy and grounding nutrition. Because real ragi and curd naturally settle, remember to give it a vigorous shake.</p>
+        <p>Ragi has long been a source of strength in many homes, known for providing energy through long days of work. We have paired this traditional grain with cooling buttermilk to create a drink that offers nourishment in a simple and refreshing way.</p>
+        <p>Ragi is a symbol of resilience and everyday health. Our Ragi Buttermilk is a tribute to that tradition, designed for those who need natural energy and grounding nutrition. Since real ragi and curd naturally settle, please remember to shake the bottle well before enjoying.</p>
       </div>
     </div>
   </section>
@@ -1055,19 +1076,18 @@
 
     <div class="info-block">
       <h3>The Roots of the Ritual</h3>
-      <p>Ragi Buttermilk carries the legacy of everyday strength forward in a simple, drinkable form. It’s the kind of grounded nutrition that has kept us going for centuries, now bottled for your fast-paced life. It’s a reminder that true strength often comes from the simplest ingredients.</p>
-      <p><em>With Shake & Gulp, this age-old nourishment fits into your modern routine—honest, real, and made to last.</em></p>
+      <p>Ragi Buttermilk provides a traditional source of strength in a simple and drinkable form. It is the type of grounded nourishment that has been used for generations and is now prepared for your daily routine. It is a reminder that lasting strength can come from simple and honest ingredients.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Full, vigorous shake is essential—ragi loves to settle at the bottom</li>
-        <li>Best enjoyed chilled during your busiest part of the day</li>
-        <li>Take a moment to savor the earthy, unique texture of the grain</li>
-        <li>Perfect as a light meal-replacer or a natural pre-workout fuel</li>
+        <li>Shake the bottle well before opening because ragi tends to settle at the bottom</li>
+        <li>Best served chilled during your busy hours</li>
+        <li>Enjoy the unique texture and earthy flavor of the grain</li>
+        <li>It is a good choice for a light snack or as a natural source of energy</li>
       </ul>
-      <p><strong>Shake the strength. Gulp the nourishment.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1091,13 +1111,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

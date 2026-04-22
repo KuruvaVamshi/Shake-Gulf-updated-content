@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -624,6 +626,18 @@
     .nav-arrow-left { left: 40px; }
     .nav-arrow-right { right: 40px; }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
@@ -741,6 +755,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -870,7 +891,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1028,8 +1049,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Nimbu Pudina is more than just a drink; it’s a moment of clarity. We’ve stayed true to the classic combination: the sharp, citrusy tang of fresh lemons paired with the deep, aromatic cooling of garden-fresh mint. It’s light, crisp, and provides that 'new start' feeling with every sip. Because we use real extracts, the mint and lemon love to settle—so give it a real shake to bring that freshness back to life.</p>
-        <p>This drink is light, hydrating, and perfect when you need something that refreshes without feeling heavy. Shake & Gulp Nimbu Pudina captures this classic combination in a convenient bottle.</p>
+        <p>Nimbu Pudina is a traditional combination that provides a moment of clarity. We have stayed true to the classic recipe, using fresh lemons and garden-fresh mint. It is a light and crisp drink that offers a refreshing feeling with every sip. Since we use real ingredients, the mint and lemon may naturally settle, so please shake the bottle well before drinking.</p>
+        <p>This drink is hydrating and is a good choice when you need something that refreshes without being heavy. Shake & Gulp Nimbu Pudina provides this classic combination in a convenient form for your daily routine.</p>
       </div>
     </div>
   </section>
@@ -1062,18 +1083,18 @@
 
     <div class="info-block">
       <h3>Roots of the Ritual</h3>
-      <p>This is the flavor of relief—the drink that has been welcoming guests and cooling down families for generations. It’s simple, honest, and deeply respected. Shake & Gulp Nimbu Pudina brings that tradition of aromatic freshness to your modern routine, bottled and ready for your day.</p>
+      <p>This flavor is a familiar sign of relief and has been used to welcome guests and refresh families for generations. It is a simple and honest tradition that is deeply respected. Shake & Gulp Nimbu Pudina brings that aromatic freshness to your modern routine in a natural and intentional way.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Shake well—real mint extract needs a moment to find its balance</li>
-        <li>Best enjoyed ice-cold, straight from the bottle</li>
-        <li>Perfect as a midday palate cleanser or a refreshing evening reset</li>
-        <li>Sip slowly and let the aromatic mint linger on your palate</li>
+        <li>Shake the bottle well to properly mix the mint and lemon flavors</li>
+        <li>Best served ice-cold for the most refreshing taste</li>
+        <li>It is a great choice for a midday break or a refreshing evening reset</li>
+        <li>Sip it slowly to fully enjoy the aromatic flavor of the mint</li>
       </ul>
-      <p><strong>Shake the mint. Gulp the cool.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1097,13 +1118,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

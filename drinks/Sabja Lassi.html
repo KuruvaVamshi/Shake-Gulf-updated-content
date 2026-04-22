@@ -479,7 +479,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -629,6 +631,19 @@
       right: 40px;
     }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
+
     @media (max-width: 768px) {
       .nav-arrow {
         width: 45px;
@@ -756,6 +771,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -885,7 +907,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1037,8 +1059,12 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Sabja Lassi is where indulgence meets mindfulness. We’ve taken the thick, velvety richness of classic Lassi and combined it with the natural cooling power of soaked Sabja (Basil) seeds. It’s a drink that doesn’t just satisfy your sweet tooth; it actually helps your body reset and cool down from the inside out.</p>
-        <p>This combination has long been enjoyed in traditional diets to beat the heat and provide gentle nourishment. When soaked, the seeds develop a soft, jelly-like texture that makes every sip feel like a small celebration. Since real seeds naturally settle, remember to give it a good shake.</p>
+        <p>Sabja Lassi is a thoughtful combination of tradition and taste. We have combined the velvety richness of
+          classic Lassi with the natural cooling properties of soaked Sabja (Basil) seeds. It is a drink designed to
+          satisfy and help your body maintain its balance from the inside out.</p>
+        <p>This combination has been used in traditional diets to manage heat and provide nourishment. When soaked, the
+          seeds develop a unique texture that complements the smoothness of the lassi. Since we use real ingredients,
+          the seeds may naturally settle, so please shake the bottle well before enjoying.</p>
       </div>
     </div>
   </section>
@@ -1071,19 +1097,20 @@
 
     <div class="info-block">
       <h3>The Roots of the Ritual</h3>
-      <p>Sabja Lassi feels like a sweet pause in the middle of a busy day—cool, creamy, and comforting. It carries the memory of traditional summer drinks shared on a porch, made to soothe both the body and the mood. It’s a little moment of calm and cooling tradition, bottled up for your busiest days.</p>
-      <p><em>Shake & Gulp brings that feeling into your hands—a simple moment of calm in every bottle.</em></p>
+      <p>Sabja Lassi provides a moment of calm during a busy day. It carries the memory of traditional summer drinks
+        that were made to soothe and refresh. It is our way of offering a cooling tradition in a convenient form,
+        prepared with care for your daily routine.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Shake well before opening so the seeds float through the lassi</li>
-        <li>Best served chilled—keep it in the fridge until you’re ready</li>
-        <li>Enjoy during warm afternoons or as a light dessert treat</li>
-        <li>Take a moment to savor the soft texture of the seeds with every sip</li>
+        <li>Shake the bottle well before opening so the seeds are properly mixed</li>
+        <li>Best served chilled for a refreshing experience</li>
+        <li>Enjoy it during a warm afternoon or as a light treat</li>
+        <li>Take your time to appreciate the unique texture of the seeds</li>
       </ul>
-      <p><strong>Shake the seeds. Gulp the comfort.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1107,13 +1134,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>

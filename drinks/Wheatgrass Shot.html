@@ -481,7 +481,9 @@
 
     .copyright {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
       font-size: 13px;
       opacity: 0.7;
     }
@@ -626,6 +628,18 @@
     .nav-arrow-left { left: 40px; }
     .nav-arrow-right { right: 40px; }
 
+    .footer-left-col {
+      position: relative;
+    }
+
+    .fssai-logo {
+      position: absolute;
+      width: 180px;
+      top: 60px;
+      left: 0;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
       .nav-arrow-left { left: 15px; }
@@ -743,6 +757,13 @@
       .footer-cols {
         flex-direction: column;
         text-align: center;
+      }
+
+      .fssai-logo {
+        position: static !important;
+        margin: 30px auto 0 auto !important;
+        width: 220px !important;
+        opacity: 1 !important;
       }
     }
 
@@ -872,7 +893,7 @@
   <div class="nav-blur"></div>
 
   <div class="navbar">
-    <div class="logo">
+    <div class="logo" onclick="location.href='../index.html'" style="cursor: pointer;">
       <img src="https://i.ibb.co/cSXcmScQ/Shake-Gulp-Logo.png" alt="Logo">
     </div>
 
@@ -1020,8 +1041,8 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Wheatgrass is like a 'green switch' for your body. Harvested at the height of its nutritional power, it delivers a fresh, earthy character that’s hard to find anywhere else. We’ve kept it clean and simple—just young wheatgrass and a touch of lemon—to give you a shot that feels like a fresh start for your cells.</p>
-        <p>Shake & Gulp Wheatgrass Shot makes it easy to include this fresh green ritual in your modern routine. It’s designed to be shaken well before drinking so you get the full goodness in every sip.</p>
+        <p>Wheatgrass is a natural way to provide your body with concentrated nourishment. Harvested when its nutritional value is high, it offers a fresh and earthy character. We have kept the recipe simple, using young wheatgrass and a touch of lemon, to provide a shot that feels like a clean start for your day.</p>
+        <p>Shake & Gulp Wheatgrass Shot makes it easy to include this fresh green ritual in your routine. It is designed to be shaken well before drinking so you receive the full benefits of the real ingredients in every sip.</p>
       </div>
     </div>
   </section>
@@ -1054,18 +1075,18 @@
 
     <div class="info-block">
       <h3>Roots of the Ritual</h3>
-      <p>There’s something grounding about drinking greens—a return to nature and balance. Wheatgrass has long been part of mindful wellness routines, symbolizing renewal and fresh starts. Shake & Gulp Wheatgrass Shot brings that moment of reset into your day—clean, green, and full of intention.</p>
+      <p>There is a grounding feeling that comes from including fresh greens in your diet, helping to maintain balance. Wheatgrass has long been a part of wellness routines, representing renewal and a natural reset. Shake & Gulp Wheatgrass Shot brings that moment of balance to your day in a clean and intentional way.</p>
     </div>
 
     <div class="info-block">
       <h3>How to Enjoy</h3>
       <ul class="tick-list two-column">
-        <li>Shake vigorously—the green blades of life love to cluster at the bottom</li>
-        <li>Best enjoyed chilled and first thing in the morning</li>
-        <li>Take it as a single, quick shot for the most impact</li>
-        <li>Follow with a sip of fresh water to enjoy the clean aftertaste</li>
+        <li>Shake the bottle well before opening because the green extract tends to settle</li>
+        <li>Best enjoyed first thing in the morning and served chilled</li>
+        <li>Consume it quickly as a single shot for the most impact</li>
+        <li>Follow it with a sip of fresh water to enjoy the clean taste</li>
       </ul>
-      <p><strong>Shake the greens. Gulp the freshness.</strong></p>
+      <p><strong>Shake well and enjoy fresh.</strong></p>
     </div>
   </section>
 
@@ -1089,13 +1110,14 @@
 
   <footer class="footer">
     <div class="container footer-cols">
-      <div>
+      <div class="footer-left-col">
         <strong>Shake & Gulp</strong>
         <p>Traditional Drinks. Honest Ingredients.</p>
+        <img src="../fssai.png" alt="FSSAI Logo" class="fssai-logo">
       </div>
       <div>
-        <p>📍 Address</p>
-        <p>📞 Phone</p>
+        <p>📍 Address : 1-8-143, New Municipal Colony, Ganeshpuri Colony, Dilsukhnagar, Hyderabad</p>
+        <p>📞 Phone Number : 9700159200</p>
         <p>✉️ Email</p>
       </div>
       <div>
