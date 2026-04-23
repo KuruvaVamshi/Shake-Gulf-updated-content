@@ -254,11 +254,11 @@
 
     .hero {
       display: flex;
-      align-items: center;
+      align-items: flex-start; /* Aligns content to top for consistency */
       justify-content: center;
       gap: 50px;
-      padding: 50px 0;
-      min-height: 85vh;
+      padding: 120px 0 50px 0; /* Consistent top padding */
+      min-height: 80vh;
       transform: translateX(-60px);
       /* moves whole hero slightly left */
     }
@@ -274,7 +274,7 @@
     .bottle {
       width: 100%;
       max-width: 280px;
-      /* slightly smaller */
+      margin-top: 20px; /* Aligns bottle top with text top */
     }
 
     /* ================= TEXT ================= */
@@ -1176,14 +1176,12 @@
     </div>
 
     <div class="info-block">
-      <h3>The Roots of the Ritual</h3>
-      <p>There is a reason Amla has been trusted for generations. It is a straightforward and natural way to look after
-        yourself. Shake & Gulp Amla Shot is our way of making traditional wisdom accessible for a busy schedule. It is
-        simple, real, and honest.</p>
+      <h3>The Roots Of The Ritual</h3>
+      <p>Amla, or Indian Gooseberry, has been the cornerstone of Ayurvedic wellness for over 3,000 years. Revered as 'Dhatri' (the Earth Mother) in ancient texts, it was believed to be the first tree to manifest on earth. In every traditional Indian household, the morning ritual of consuming Amla was a non-negotiable practice for longevity and vitality. Our Amla Shot preserves this timeless ritual, bringing the raw potency of the forest to your modern desk. It’s not just a drink; it’s a connection to an age-old legacy of natural defense and inner radiance.</p>
     </div>
 
     <div class="info-block">
-      <h3>How to Enjoy</h3>
+      <h3>How To Enjoy</h3>
       <ul class="tick-list two-column">
         <li>Shake the bottle well as the natural ingredients settle at the bottom</li>
         <li>Best enjoyed first thing in the morning as part of your routine</li>

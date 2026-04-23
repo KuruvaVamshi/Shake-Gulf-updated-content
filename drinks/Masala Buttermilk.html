@@ -254,11 +254,13 @@
 
     .hero {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      /* Aligns content to top for consistency */
       justify-content: center;
       gap: 50px;
-      padding: 50px 0;
-      min-height: 85vh;
+      padding: 120px 0 50px 0;
+      /* Consistent top padding */
+      min-height: 80vh;
       transform: translateX(-60px);
       /* moves whole hero slightly left */
     }
@@ -274,7 +276,8 @@
     .bottle {
       width: 100%;
       max-width: 280px;
-      /* slightly smaller */
+      margin-top: 20px;
+      /* Aligns bottle top with text top */
     }
 
     /* ================= TEXT ================= */
@@ -670,8 +673,13 @@
       color: #000;
     }
 
-    .nav-arrow-left { left: 40px; }
-    .nav-arrow-right { right: 40px; }
+    .nav-arrow-left {
+      left: 40px;
+    }
+
+    .nav-arrow-right {
+      right: 40px;
+    }
 
     .footer-left-col {
       position: relative;
@@ -686,9 +694,19 @@
     }
 
     @media (max-width: 768px) {
-      .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
-      .nav-arrow-left { left: 15px; }
-      .nav-arrow-right { right: 15px; }
+      .nav-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+      }
+
+      .nav-arrow-left {
+        left: 15px;
+      }
+
+      .nav-arrow-right {
+        right: 15px;
+      }
 
       .custom-footer {
         padding: 60px 20px 30px 20px;
@@ -1081,7 +1099,8 @@
 
   <section class="hero container">
     <div class="hero-left">
-      <img src="https://i.ibb.co/CsmVtxTg/Masala-Buttermilk-544x652.png" class="bottle" alt="Masala Buttermilk Drink Bottle">
+      <img src="https://i.ibb.co/CsmVtxTg/Masala-Buttermilk-544x652.png" class="bottle"
+        alt="Masala Buttermilk Drink Bottle">
     </div>
 
     <div class="hero-right">
@@ -1131,8 +1150,13 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Masala Buttermilk is often thought of as the original energy drink prepared in traditional kitchens. It is a bold and flavorful blend of cooling curd, ginger for warmth, and the sharp taste of fresh green chilies and curry leaves. It does more than just hydrate; it provides a refreshing kick that wakes up your system. We have kept the spice profile authentic and the texture honest, staying true to the recipe that was always waiting for you at home.</p>
-        <p>At Shake & Gulp, we prioritize pure and real ingredients without using artificial additives, ensuring a timeless recipe is available for your modern routine.</p>
+        <p>Masala Buttermilk is often thought of as the original energy drink prepared in traditional kitchens. It is a
+          bold and flavorful blend of cooling curd, ginger for warmth, and the sharp taste of fresh green chilies and
+          curry leaves. It does more than just hydrate; it provides a refreshing kick that wakes up your system. We have
+          kept the spice profile authentic and the texture honest, staying true to the recipe that was always waiting
+          for you at home.</p>
+        <p>At Shake & Gulp, we prioritize pure and real ingredients without using artificial additives, ensuring a
+          timeless recipe is available for your modern routine.</p>
       </div>
     </div>
   </section>
@@ -1163,12 +1187,16 @@
     </div>
 
     <div class="info-block">
-      <h3>Roots of the Ritual</h3>
-      <p>This drink captures the atmosphere of a busy Indian kitchen, with the familiar sound of the churn and the aroma of fresh ginger. It is a tradition based on feeling refreshed and revitalized. Shake & Gulp Masala Buttermilk maintains this legacy by using the same spicy and cooling elements that have been enjoyed for generations.</p>
+      <h3>Roots Of The Ritual</h3>
+      <p>Masala Buttermilk is the vibrant, spiced-up version of the classic 'Chaas', reflecting the rich diversity of
+        traditional Indian flavors. With a blend of ginger, green chilies, and coriander, it was the drink of choice to
+        revive the senses and aid digestion after a heavy feast. This ritual is a celebration of the spice-rich heritage
+        of our ancestors, who knew exactly how to use the gifts of the earth to keep the body energized and the gut
+        happy.</p>
     </div>
 
     <div class="info-block">
-      <h3>How to Enjoy</h3>
+      <h3>How To Enjoy</h3>
       <ul class="tick-list two-column">
         <li>Shake the bottle well so the spices and herbs are mixed evenly</li>
         <li>Best served chilled to enjoy the contrast between the spice and the cold curd</li>

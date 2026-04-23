@@ -254,11 +254,11 @@
 
     .hero {
       display: flex;
-      align-items: center;
+      align-items: flex-start; /* Aligns content to top for consistency */
       justify-content: center;
       gap: 50px;
-      padding: 50px 0;
-      min-height: 85vh;
+      padding: 120px 0 50px 0; /* Consistent top padding */
+      min-height: 80vh;
       transform: translateX(-60px);
       /* moves whole hero slightly left */
     }
@@ -274,7 +274,7 @@
     .bottle {
       width: 100%;
       max-width: 280px;
-      /* slightly smaller */
+      margin-top: 20px; /* Aligns bottle top with text top */
     }
 
     /* ================= TEXT ================= */
@@ -1158,14 +1158,12 @@
       <p>A simple drink that your stomach will thank you for.</p>
     </div>
     <div class="info-block">
-      <h3>Roots of the Ritual</h3>
-      <p>This is the glass of buttermilk served after lunch at home—a cooling comfort that has been used for
-        generations. It is a traditional remedy that is both simple and deeply trusted. Shake & Gulp brings that same
-        familiar feeling to your daily routine, prepared with care and respect for tradition.</p>
+      <h3>Roots Of The Ritual</h3>
+      <p>Buttermilk, or 'Chaas', is the soul of the Indian summer. Traditionally prepared by churning curd in a wooden pot (Madhani), it was more than just a drink—it was a gesture of hospitality and a symbol of abundance. In ancient texts, it is described as 'Amrita' (the nectar of life) for its ability to restore balance to the gut. Our Buttermilk stays true to this cooling heritage, offering a simple, honest ritual of hydration that has refreshed weary travelers and busy families for centuries.</p>
     </div>
 
     <div class="info-block">
-      <h3>How to Enjoy</h3>
+      <h3>How To Enjoy</h3>
       <ul class="tick-list two-column">
         <li>Shake the bottle well before opening</li>
         <li>Best served chilled for a refreshing experience</li>

@@ -254,11 +254,13 @@
 
     .hero {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      /* Aligns content to top for consistency */
       justify-content: center;
       gap: 50px;
-      padding: 50px 0;
-      min-height: 85vh;
+      padding: 120px 0 50px 0;
+      /* Consistent top padding */
+      min-height: 80vh;
       transform: translateX(-60px);
       /* moves whole hero slightly left */
     }
@@ -274,7 +276,8 @@
     .bottle {
       width: 100%;
       max-width: 280px;
-      /* slightly smaller */
+      margin-top: 20px;
+      /* Aligns bottle top with text top */
     }
 
     /* ================= TEXT ================= */
@@ -672,13 +675,28 @@
       color: #000;
     }
 
-    .nav-arrow-left { left: 40px; }
-    .nav-arrow-right { right: 40px; }
+    .nav-arrow-left {
+      left: 40px;
+    }
+
+    .nav-arrow-right {
+      right: 40px;
+    }
 
     @media (max-width: 768px) {
-      .nav-arrow { width: 45px; height: 45px; font-size: 20px; }
-      .nav-arrow-left { left: 15px; }
-      .nav-arrow-right { right: 15px; }
+      .nav-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+      }
+
+      .nav-arrow-left {
+        left: 15px;
+      }
+
+      .nav-arrow-right {
+        right: 15px;
+      }
 
       .custom-footer {
         padding: 60px 20px 30px 20px;
@@ -1103,8 +1121,11 @@
 
       <div class="special">
         <h2>What’s Special About This Drink?</h2>
-        <p>Wheatgrass is a natural way to provide your body with concentrated nourishment. Harvested when its nutritional value is high, it offers a fresh and earthy character. We have kept the recipe simple, using young wheatgrass and a touch of lemon, to provide a shot that feels like a clean start for your day.</p>
-        <p>Shake & Gulp Wheatgrass Shot makes it easy to include this fresh green ritual in your routine. It is designed to be shaken well before drinking so you receive the full benefits of the real ingredients in every sip.</p>
+        <p>Wheatgrass is a natural way to provide your body with concentrated nourishment. Harvested when its
+          nutritional value is high, it offers a fresh and earthy character. We have kept the recipe simple, using young
+          wheatgrass and a touch of lemon, to provide a shot that feels like a clean start for your day.</p>
+        <p>Shake & Gulp Wheatgrass Shot makes it easy to include this fresh green ritual in your routine. It is designed
+          to be shaken well before drinking so you receive the full benefits of the real ingredients in every sip.</p>
       </div>
     </div>
   </section>
@@ -1136,12 +1157,16 @@
     </div>
 
     <div class="info-block">
-      <h3>Roots of the Ritual</h3>
-      <p>There is a grounding feeling that comes from including fresh greens in your diet, helping to maintain balance. Wheatgrass has long been a part of wellness routines, representing renewal and a natural reset. Shake & Gulp Wheatgrass Shot brings that moment of balance to your day in a clean and intentional way.</p>
+      <h3>Roots Of The Ritual</h3>
+      <p>Wheatgrass has long been celebrated as 'liquid sunshine,' a vibrant tribute to the life-giving energy of the
+        earth. From the early experiments in natural living to its rise as a modern wellness icon, the practice of
+        juicing young wheat stalks has always been about capturing the peak of nutritional potential. Our Wheatgrass
+        Shot brings you this concentrated burst of chlorophyll and life, serving as a daily reminder of the rejuvenating
+        power found in the simplest, most honest gifts of nature.</p>
     </div>
 
     <div class="info-block">
-      <h3>How to Enjoy</h3>
+      <h3>How To Enjoy</h3>
       <ul class="tick-list two-column">
         <li>Shake the bottle well before opening because the green extract tends to settle</li>
         <li>Best enjoyed first thing in the morning and served chilled</li>

@@ -255,11 +255,11 @@
 
     .hero {
       display: flex;
-      align-items: center;
+      align-items: flex-start; /* Aligns content to top for consistency */
       justify-content: center;
       gap: 50px;
-      padding: 50px 0;
-      min-height: 85vh;
+      padding: 120px 0 50px 0; /* Consistent top padding */
+      min-height: 80vh;
       transform: translateX(-60px);
       /* moves whole hero slightly left */
     }
@@ -275,7 +275,7 @@
     .bottle {
       width: 100%;
       max-width: 280px;
-      /* slightly smaller */
+      margin-top: 20px; /* Aligns bottle top with text top */
     }
 
     /* ================= TEXT ================= */
@@ -1224,12 +1224,12 @@
     </div>
 
     <div class="info-block">
-      <h3>Roots of the Ritual</h3>
-      <p>Barley water is a traditional remedy that has been used for generations to provide cooling and relief. It is a simple and honest way to care for the body during warm weather. Shake & Gulp Barley Drink brings that same quiet care into your daily routine in a light and intentional way.</p>
+      <h3>Roots Of The Ritual</h3>
+      <p>Barley is one of the oldest cultivated grains in human history, once the primary source of strength for ancient Greek athletes and Roman gladiators. In traditional wellness, 'Barley Water' was the go-to remedy for cooling the system and providing gentle, sustained energy. This drink revives that humble but powerful ritual. It’s a clean, light, and refreshing way to hydrate that honors the ancient grain’s legacy as a reliable companion for physical endurance and internal cooling.</p>
     </div>
 
     <div class="info-block">
-      <h3>How to Enjoy</h3>
+      <h3>How To Enjoy</h3>
       <ul class="tick-list two-column">
         <li>Shake the bottle well before opening because the barley extract naturally settles</li>
         <li>Best served chilled when you need a cooling drink</li>
